@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  config.secret_key = '177a3219efca459c6f2d1c35eac9ea6ddce6dab7e73ed3b4c0541f7ff6f2f8c3547436bee8d413498700fe2cabeed8167cc48e24f72d9e56b89b363312d9c4a1'
+  # config.secret_key = 'b2715430858fc6abe776f89b56b892a012f8e9579e3f97dfebe9e07ba8a0dcf7919542ebc8de971f6e4dd6259d71bee6741115b6d475df087002961309ea6bc4'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -95,14 +95,14 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = 'b85cb13430ff4b9497469e02cb3b3d834fdbd74222698a8be0c68cfaaf513dfb3a2d597aaf63caa33255d5b0ca03a64a2a5b12a363979031cb6de6216b201a74'
+  # config.pepper = 'cc13505de5f7666642262382388db86a0474c82ac53eb6f78afd4e2171529d5345dc548f6553307f673c35d231c6ef686f7aa8e61e60d3507c3dee88175ddf61'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
-  # confirming his account. For instance, if set to 2.days, the user will be
-  # able to access the website for two days without confirming his account,
+  # confirming their account. For instance, if set to 2.days, the user will be
+  # able to access the website for two days without confirming their account,
   # access will be blocked just in the third day. Default is 0.days, meaning
-  # the user cannot access the website without confirming his account.
+  # the user cannot access the website without confirming their account.
   # config.allow_unconfirmed_access_for = 2.days
 
   # A period that the user is allowed to confirm their account before their
@@ -134,7 +134,7 @@ Devise.setup do |config|
   # config.rememberable_options = {}
 
   # ==> Configuration for :validatable
-  # Range for password length. Default is 8..128.
+  # Range for password length.
   config.password_length = 8..128
 
   # Email regex used to validate email formats. It simply asserts that
